@@ -1,0 +1,26 @@
+.guide {
+  position: relative;
+  padding-bottom: 25%;
+  margin-bottom: 1rem;
+}
+.guide-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 1rem;
+  border: 1px solid rgba(0,0,0, .075);
+  padding: 1rem;
+  height: 100%;
+  border-radius: 3px;
+  box-shadow: rgba(0,0,0, .01) 0 2px 5px;
+  background: #fff;
+}
+.guide .beta {
+  font-size: 1.125rem;
+}
+.guide .beta a {
+  border: 0;
+}
+.guide-description {
+  font-style: italic;
+}
