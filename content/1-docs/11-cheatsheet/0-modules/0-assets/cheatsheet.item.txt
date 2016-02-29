@@ -1,0 +1,31 @@
+Title: {{class.instance}}->assets($route, $root)
+
+----
+
+Excerpt: Creates a route for an asset directory
+
+----
+
+Params: -
+  name: $route
+  type: string
+  text: Base for the route
+-
+  name: $root
+  type: string
+  text: Path to file directory to which the route will point
+
+----
+
+Text:
+
+## Example
+
+Since Kirby's default `.htaccess` prevents direct access to the `site/` directory, assets e.g. from a plugin need a route to be accessed. THis function offers an easy way to create such a route for a directory and its subdirectories:
+
+```php
+kirby()->modules()->assets('assets/myPlugin', __DIR__ . DS . 'assets');
+
+// can then be used in a template
+<?= js('assets/myPlugin/plugin.js') ?>
+```

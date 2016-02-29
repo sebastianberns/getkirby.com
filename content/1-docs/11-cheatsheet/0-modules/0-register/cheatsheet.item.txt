@@ -1,0 +1,49 @@
+Title: {{class.instance}}->register($module, $dir)
+
+----
+
+Excerpt: Registers an additional file directory as source for a specific module
+
+----
+
+Params: -
+  name: $module
+  type: string
+  text: Module for which the directory should be registered
+-
+  name: $dir
+  type: string
+  text: Path to file directory that should be registered
+
+----
+
+Return:
+
+type: bool
+text:
+
+----
+
+Text:
+
+## Example
+
+```php
+kirby()->modules()->register('snippets',  __DIR__ . DS . 'snippets');
+```
+
+## Avialable modules
+You can register additional source directories for the following modules:
+
+| $module | Refers to |
+| - | - |
+| controllers | (link: docs/templates/controllers text: Page Controllers) |
+| languages | (link: docs/languages/variables text: Custom language files) |
+| models | (link: docs/templates/models text: Page Models) |
+| snippets | (link: docs/templates/snippets text: Template Snippets) |
+| tags | (link: docs/advanced/kirbytext text: Custom Kirbytext tags) |
+| templates | (link: docs/templates/basics text: Templates) |
+| autocss | (link: docs/cheatsheet/helpers/css text: Autoloading template specific css files) |
+| autojs | (link: docs/cheatsheet/helpers/js text: Autoloading template specific js files) |
+| blueprints | (link: docs/panel/blueprints text: Panel Blueprints) |
+| fields | (link: docs/panel/developers/custom-form-fields text: Custom panel form fields) |
